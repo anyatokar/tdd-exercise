@@ -52,7 +52,7 @@ describe 'Blackjack Score' do
 
   end
 
-  it 'raises an ArgumentError for invalid cards' do
+  it 'raises an ArgumentError for invalid number of cards' do
 
     expect {
       blackjack_score(["Ace", 4, 3, "Queen", "King", 5])
@@ -67,7 +67,7 @@ describe 'Blackjack Score' do
   it 'raises an ArgumentError for scores over 21' do
 
     expect {
-      blackjack_score(["Ace", 4, 3, "Queen", "King", 5])
+      blackjack_score(["Ace", "Jack", 3, "King"])
     }.must_raise ArgumentError
 
     expect {
