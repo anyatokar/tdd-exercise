@@ -2,8 +2,7 @@
 
 VALID_CARDS = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'Jack', 'Queen', 'King', 'Ace']
 
-
-# tallies up aces. once score hits certain amount,
+# tallies up aces.
 def aces_method(score, ace_count)
 
   if  ace_count == 1 && score <= 10
